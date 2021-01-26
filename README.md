@@ -49,9 +49,8 @@ const packageName = "your-package-name";
   - [Limitations and a thing to remember](#limitations)
   - [Safety notice](#safety-notice)
   - [Example 1 - list of files with certain extension](#approach-a-example-1)
-  - [Example 2](#approach-a-example-2)
+  - [Example 2 - nesting macros](#approach-a-example-2)
   - [Example 3 - preval / codegen clones](#approach-a-example-3)
-  - [Example 4](#approach-a-example-4)
 
 - [Approach B - Separate macros (not recommended)](#approach-b)
 
@@ -362,12 +361,6 @@ m.codegen(() => {
 // => var dog = "dog";
 // => var bird = "bird";
 ```
-
-<a id="approach-a-example-4"></a>
-
-### Example 4
-
-TODO
 
 <br>
 
