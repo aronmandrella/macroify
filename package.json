@@ -1,0 +1,63 @@
+{
+  "name": "macroify",
+  "version": "1.0.0",
+  "author": "Aron Mandrella",
+  "license": "MIT",
+  "description": "Macroify allows you to easily turn any JavaScript module, into a Babel macro that behaves (almost) like a regular object... but at build time.",
+  "engines": {
+    "node": ">=11"
+  },
+  "main": "dist/main.js",
+  "files": [
+    "dist/*",
+    "require.macro.js"
+  ],
+  "keywords": [
+    "babel",
+    "plugin",
+    "macro",
+    ".macro",
+    "macros",
+    "babel-plugin-macros",
+    "create-react-app",
+    "webpack",
+    "boilerplate",
+    "utility",
+    "wrapper",
+    "loader",
+    "module",
+    "createMacro",
+    "module",
+    "development",
+    "production"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aronmandrella/macroify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aronmandrella/macroify/issues"
+  },
+  "homepage": "https://github.com/aronmandrella/macroify",
+  "scripts": {
+    "build": "del-cli ./dist && babel src --out-dir dist",
+    "build-examples": "del-cli ./examples/dist && babel examples/src --out-dir examples/dist --plugins=babel-plugin-macros",
+    "watch-examples": "del-cli ./examples/dist && babel examples/src --watch --out-dir examples/dist --plugins=babel-plugin-macros"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.12.11",
+    "babel-plugin-macros": "^3.0.1",
+    "chalk": "^4.1.0",
+    "javascript-stringify": "^2.0.1",
+    "param-case": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "core-js": "^3.8.2",
+    "del-cli": "^3.0.1",
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.20"
+  }
+}
